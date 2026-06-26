@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3BD68" />
+      <stop offset="100%" stop-color="#C7843B" />
+    </linearGradient>
+    <linearGradient id="gradB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#172531" />
+      <stop offset="100%" stop-color="#2C4657" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="680" rx="60" fill="#000101" />
+  <circle cx="240" cy="140" r="90" fill="url(#gradA)" opacity="0.9" />
+  <rect x="520" y="90" width="260" height="360" rx="42" fill="#172531" />
+  <rect x="250" y="260" width="430" height="340" rx="40" fill="#2C4657" />
+  <rect x="290" y="315" width="340" height="220" rx="26" fill="#172531" />
+  <rect x="330" y="365" width="240" height="130" rx="18" fill="url(#gradA)" />
+  <circle cx="360" cy="405" r="18" fill="#F8EFE0" opacity="0.9" />
+  <circle cx="420" cy="405" r="18" fill="#F8EFE0" opacity="0.9" />
+  <circle cx="480" cy="405" r="18" fill="#F8EFE0" opacity="0.9" />
+  <rect x="320" y="430" width="280" height="20" rx="10" fill="#C7843B" opacity="0.95" />
+  <path d="M 460 150 C 500 170 540 245 500 310" fill="none" stroke="#F3BD68" stroke-width="20" stroke-linecap="round" opacity="0.6" />
+  <path d="M 505 135 C 550 190 630 220 680 160" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-opacity="0.7" />
+  <rect x="220" y="410" width="180" height="220" rx="40" fill="#0F1B26" />
+  <rect x="250" y="450" width="120" height="100" rx="18" fill="#4D6473" opacity="0.85" />
+  <rect x="570" y="430" width="140" height="36" rx="18" fill="#F3BD68" />
+  <rect x="570" y="480" width="100" height="16" rx="8" fill="#F3BD68" opacity="0.7" />
+  <rect x="570" y="510" width="80" height="12" rx="6" fill="#F3BD68" opacity="0.6" />
+  <ellipse cx="196" cy="550" rx="132" ry="40" fill="#172531" opacity="0.35" />
+</svg>
