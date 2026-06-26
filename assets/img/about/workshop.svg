@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Taller técnico profesional">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#172531"/>
+      <stop offset=".55" stop-color="#2C4657"/>
+      <stop offset="1" stop-color="#000101"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop stop-color="#F3BD68"/>
+      <stop offset="1" stop-color="#C7843B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <path d="M0 145h1200M0 324h1200M0 675h1200M148 0v900M384 0v900M812 0v900M1034 0v900" stroke="#4D6473" stroke-opacity=".28" stroke-width="3"/>
+  <rect x="96" y="130" width="1008" height="610" rx="28" fill="#0A151C" stroke="#4D6473" stroke-width="4"/>
+  <rect x="142" y="178" width="450" height="260" rx="18" fill="#172531" stroke="#4D6473" stroke-width="3"/>
+  <rect x="628" y="178" width="330" height="260" rx="18" fill="#172531" stroke="#4D6473" stroke-width="3"/>
+  <rect x="174" y="210" width="386" height="42" rx="8" fill="url(#gold)"/>
+  <rect x="174" y="286" width="280" height="24" rx="7" fill="#4D6473"/>
+  <rect x="174" y="332" width="336" height="24" rx="7" fill="#4D6473"/>
+  <circle cx="736" cy="300" r="78" fill="none" stroke="url(#gold)" stroke-width="18"/>
+  <path d="M736 206v188M642 300h188" stroke="#F3BD68" stroke-width="10" stroke-linecap="round" opacity=".65"/>
+  <rect x="196" y="515" width="810" height="120" rx="20" fill="#2C4657"/>
+  <rect x="240" y="480" width="170" height="94" rx="18" fill="#4D6473"/>
+  <rect x="470" y="474" width="250" height="98" rx="18" fill="#C7843B"/>
+  <rect x="780" y="482" width="180" height="92" rx="18" fill="#4D6473"/>
+  <path d="M250 645h700" stroke="#F3BD68" stroke-width="10" stroke-linecap="round"/>
+  <text x="96" y="822" fill="#F3BD68" font-family="Poppins, Arial" font-size="42" font-weight="700">NovaVolt Technical Lab</text>
+  <text x="96" y="866" fill="#D8E1E5" font-family="Inter, Arial" font-size="26">Diagnóstico, reparación y control de calidad</text>
+</svg>
