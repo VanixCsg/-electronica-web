@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Equipo técnico NovaVolt">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#000101"/>
+      <stop offset=".52" stop-color="#172531"/>
+      <stop offset="1" stop-color="#4D6473"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop stop-color="#F3BD68"/>
+      <stop offset="1" stop-color="#C7843B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="260" cy="316" r="92" fill="#F3BD68"/>
+  <circle cx="600" cy="280" r="108" fill="#C7843B"/>
+  <circle cx="934" cy="326" r="88" fill="#F3BD68"/>
+  <path d="M98 770c18-172 116-272 264-272s248 100 266 272H98Z" fill="#2C4657" stroke="#4D6473" stroke-width="5"/>
+  <path d="M392 784c22-210 132-330 300-330s278 120 300 330H392Z" fill="#172531" stroke="#4D6473" stroke-width="5"/>
+  <path d="M710 770c16-168 108-260 246-260s230 92 246 260H710Z" fill="#2C4657" stroke="#4D6473" stroke-width="5"/>
+  <rect x="430" y="612" width="340" height="68" rx="14" fill="url(#gold)"/>
+  <path d="M500 646h200M560 612v68" stroke="#172531" stroke-width="10" stroke-linecap="round"/>
+  <path d="M90 120h1020" stroke="#4D6473" stroke-width="4" stroke-opacity=".5"/>
+  <path d="M160 120v96M520 120v96M880 120v96" stroke="#4D6473" stroke-width="4" stroke-opacity=".5"/>
+  <text x="84" y="842" fill="#F3BD68" font-family="Poppins, Arial" font-size="42" font-weight="700">Equipo certificado de atención técnica</text>
+</svg>
