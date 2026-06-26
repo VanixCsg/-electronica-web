@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tienda | NovaVolt Service</title>
+  <meta name="description" content="Tienda demo local de NovaVolt Service con repuestos, accesorios y herramientas ficticias para electrónica." />
+  <meta name="theme-color" content="#172531" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a class="brand" href="../index.html">
+        <img class="brand-logo" src="../assets/img/logo.svg" alt="" />
+        <span class="brand-text">NovaVolt <strong>Service</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="tienda.html" class="nav-link active">Tienda</a>
+        <a href="solicitar-reparacion.html" class="nav-link">Reparación</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="seguimiento-orden.html">Seguimiento</a>
+        <a class="btn btn-primary" href="solicitar-reparacion.html">Solicitar servicio</a>
+      </div>
+
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <img src="../assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="../index.html">Inicio</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="solicitar-reparacion.html">Solicitar reparación</a>
+      <a href="seguimiento-orden.html">Seguimiento de orden</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Tienda demo</p>
+          <h1>Repuestos y accesorios ficticios con carrito local.</h1>
+          <p class="hero-description">
+            Esta tienda usa productos guardados en localStorage. Puedes simular
+            una experiencia de catálogo, ofertas y carrito sin base de datos externa.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+            <a class="btn btn-secondary" href="solicitar-reparacion.html">Solicitar asesoría</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+              <p>Carrito local</p>
+              <strong><span data-cart-count>0</span> productos</strong>
+            </div>
+          </div>
+
+          <div class="device-card">
+            <span class="device-label">Inventario demo</span>
+            <h2>Componentes, controles, cables y herramientas para reparación.</h2>
+
+            <ol class="timeline">
+              <li class="done">Catálogo cargado</li>
+              <li class="done">Ofertas demo</li>
+              <li class="current">Carrito local</li>
+              <li>Checkout futuro</li>
+              <li>Factura demo</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section services-preview" id="catalogo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Catálogo</p>
+          <h2>Productos disponibles para demostración.</h2>
+          <p>
+            Los botones de agregar al carrito guardan los productos en el navegador.
+          </p>
+        </div>
+
+        <div class="card-grid" data-products-grid>
+          <article class="service-card reveal">
+            <img src="../assets/icons/tools.svg" alt="" />
+            <h3>Main Board NV-55Q Pro</h3>
+            <p>Tarjeta principal compatible con televisores Smart TV de 55 pulgadas.</p>
+            <p><strong>$145.99</strong></p>
+            <a href="#" data-add-cart="1">Agregar al carrito</a>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="../assets/icons/lightning.svg" alt="" />
+            <h3>Fuente de poder LED 220W</h3>
+            <p>Fuente de poder estable para equipos LED de gama media.</p>
+            <p><strong>$89.50</strong></p>
+            <a href="#" data-add-cart="2">Agregar al carrito</a>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="../assets/icons/phone.svg" alt="" />
+            <h3>Control Smart Universal</h3>
+            <p>Control remoto universal para televisores inteligentes.</p>
+            <p><strong>$24.99</strong></p>
+            <a href="#" data-add-cart="3">Agregar al carrito</a>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="../assets/icons/check.svg" alt="" />
+            <h3>Cable HDMI Ultra 2.1</h3>
+            <p>Cable HDMI para 4K, 8K, HDR y audio de alta calidad.</p>
+            <p><strong>$18.75</strong></p>
+            <a href="#" data-add-cart="4">Agregar al carrito</a>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="../assets/icons/star.svg" alt="" />
+            <h3>Kit técnico de precisión</h3>
+            <p>Kit profesional para mantenimiento y reparación electrónica.</p>
+            <p><strong>$69.99</strong></p>
+            <a href="#" data-add-cart="5">Agregar al carrito</a>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="../assets/icons/email.svg" alt="" />
+            <h3>Asesoría de repuestos</h3>
+            <p>Servicio demo para ayudarte a identificar una pieza compatible.</p>
+            <p><strong>$0.00</strong></p>
+            <a href="contacto.html">Consultar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Carrito</p>
+          <h2>Resumen local de compra.</h2>
+          <p>
+            Este resumen se actualizará con JavaScript cuando agregues productos.
+          </p>
+        </div>
+
+        <div class="device-card reveal" data-cart-summary>
+          <span class="device-label">Carrito vacío</span>
+          <h2>No hay productos agregados todavía.</h2>
+          <p class="hero-description">
+            Agrega productos desde el catálogo para ver el total local.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section section-dark">
+      <div class="container cta-box reveal">
+        <p class="eyebrow">¿No sabes qué pieza necesitas?</p>
+        <h2>Solicita un diagnóstico antes de comprar.</h2>
+        <p>
+          Una reparación profesional empieza por identificar correctamente la falla.
+        </p>
+
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="solicitar-reparacion.html">Solicitar diagnóstico</a>
+          <a class="btn btn-secondary" href="contacto.html">Contactar asesor</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 NovaVolt Service. Empresa ficticia.</p>
+      <div>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="garantia.html">Garantía</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/50760000000" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <img src="../assets/icons/whatsapp.svg" alt="" />
+  </a>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">
+    <img src="../assets/icons/arrow-up.svg" alt="" />
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/localStorageDB.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/main.js"></script>
+
+  <script>
+    function updateCartView() {
+      const countElements = document.querySelectorAll("[data-cart-count]");
+      const summary = document.querySelector("[data-cart-summary]");
+      const count = window.NovaVoltDB.cart.count();
+      const total = window.NovaVoltDB.cart.total();
+
+      countElements.forEach((element) => {
+        element.textContent = count;
+      });
+
+      if (!summary) return;
+
+      if (count === 0) {
+        summary.innerHTML = `
+          <span class="device-label">Carrito vacío</span>
+          <h2>No hay productos agregados todavía.</h2>
+          <p class="hero-description">Agrega productos desde el catálogo para ver el total local.</p>
+        `;
+        return;
+      }
+
+      summary.innerHTML = `
+        <span class="device-label">Carrito activo</span>
+        <h2>${count} producto(s) agregados</h2>
+        <p class="hero-description">Total demo: <strong>$${total.toFixed(2)}</strong></p>
+        <div class="hero-actions">
+          <button class="btn btn-dark" type="button" data-clear-cart>Vaciar carrito</button>
+          <a class="btn btn-primary" href="contacto.html">Consultar compra</a>
+        </div>
+      `;
+
+      const clearButton = summary.querySelector("[data-clear-cart]");
+      clearButton?.addEventListener("click", () => {
+        window.NovaVoltDB.cart.clear();
+        updateCartView();
+      });
+    }
+
+    document.querySelectorAll("[data-add-cart]").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const productId = Number(button.dataset.addCart);
+        window.NovaVoltDB.cart.add(productId, 1);
+        updateCartView();
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", updateCartView);
+  </script>
+</body>
+</html>

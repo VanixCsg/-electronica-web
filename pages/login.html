@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Login | NovaVolt Service</title>
+  <meta name="description" content="Inicio de sesión demo local de NovaVolt Service usando localStorage." />
+  <meta name="theme-color" content="#172531" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a class="brand" href="../index.html">
+        <img class="brand-logo" src="../assets/img/logo.svg" alt="" />
+        <span class="brand-text">NovaVolt <strong>Service</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="tienda.html" class="nav-link">Tienda</a>
+        <a href="solicitar-reparacion.html" class="nav-link">Reparación</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="registro.html">Registro</a>
+        <a class="btn btn-primary" href="login.html">Entrar</a>
+      </div>
+
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <img src="../assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="../index.html">Inicio</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="solicitar-reparacion.html">Solicitar reparación</a>
+      <a href="seguimiento-orden.html">Seguimiento de orden</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container auth-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Área del cliente</p>
+          <h1>Accede al panel demo de NovaVolt.</h1>
+          <p class="hero-description">
+            Inicia sesión con una cuenta local guardada en el navegador. Para probar,
+            usa: <strong>cliente@novavolt.demo</strong> y contraseña <strong>cliente123</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="registro.html">Crear cuenta demo</a>
+            <a class="btn btn-secondary" href="dashboard.html">Ir al panel</a>
+          </div>
+        </div>
+
+        <form class="auth-card reveal" data-login-form>
+          <span class="device-label">Login local</span>
+          <h2>Iniciar sesión</h2>
+
+          <div class="form-grid">
+            <label class="full">
+              Correo electrónico
+              <input type="email" name="email" value="cliente@novavolt.demo" required />
+            </label>
+
+            <label class="full">
+              Contraseña
+              <input type="password" name="password" value="cliente123" required />
+            </label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Entrar al panel</button>
+
+          <p class="auth-note">
+            ¿No tienes cuenta?
+            <a href="registro.html">Regístrate aquí</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 NovaVolt Service. Empresa ficticia.</p>
+      <div>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="garantia.html">Garantía</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">
+    <img src="../assets/icons/arrow-up.svg" alt="" />
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/localStorageDB.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/main.js"></script>
+
+  <script>
+    const loginForm = document.querySelector("[data-login-form]");
+
+    loginForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(loginForm);
+      const email = String(formData.get("email") || "").trim();
+      const password = String(formData.get("password") || "").trim();
+
+      const result = window.NovaVoltDB.auth.login(email, password);
+
+      if (!result.ok) {
+        const toast = document.querySelector("#toast");
+        toast.textContent = result.message;
+        toast.classList.add("is-visible");
+        setTimeout(() => toast.classList.remove("is-visible"), 2800);
+        return;
+      }
+
+      window.location.href = "dashboard.html";
+    });
+  </script>
+</body>
+</html>

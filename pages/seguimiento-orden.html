@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Seguimiento de Orden | NovaVolt Service</title>
+  <meta name="description" content="Consulta el estado de una orden demo de NovaVolt Service usando localStorage." />
+  <meta name="theme-color" content="#172531" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a class="brand" href="../index.html">
+        <img class="brand-logo" src="../assets/img/logo.svg" alt="" />
+        <span class="brand-text">NovaVolt <strong>Service</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="tienda.html" class="nav-link">Tienda</a>
+        <a href="solicitar-reparacion.html" class="nav-link">Reparación</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="seguimiento-orden.html">Seguimiento</a>
+        <a class="btn btn-primary" href="solicitar-reparacion.html">Solicitar servicio</a>
+      </div>
+
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <img src="../assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="../index.html">Inicio</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="solicitar-reparacion.html">Solicitar reparación</a>
+      <a href="seguimiento-orden.html">Seguimiento de orden</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Seguimiento local</p>
+          <h1>Consulta el estado de tu reparación demo.</h1>
+          <p class="hero-description">
+            Ingresa el código de orden generado en la solicitud. También puedes probar con
+            el código demo: <strong>NV-2026-0148</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#consulta">Consultar ahora</a>
+            <a class="btn btn-secondary" href="solicitar-reparacion.html">Crear solicitud</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+              <p>Código demo</p>
+              <strong>NV-2026-0148</strong>
+            </div>
+          </div>
+
+          <div class="device-card">
+            <span class="device-label">Estados de orden</span>
+            <h2>Recibido, diagnóstico, cotización, reparación y entrega.</h2>
+
+            <ol class="timeline">
+              <li class="done">Solicitud recibida</li>
+              <li class="done">Diagnóstico técnico</li>
+              <li class="current">Cotización enviada</li>
+              <li>En reparación</li>
+              <li>Listo para entrega</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section services-preview" id="consulta">
+      <div class="container about-grid">
+        <div class="about-content reveal">
+          <p class="eyebrow">Buscar orden</p>
+          <h2>Ingresa el código de seguimiento.</h2>
+          <p>
+            El resultado se lee directamente desde localStorage. Las órdenes creadas
+            en la página de solicitud aparecerán aquí mientras uses el mismo navegador.
+          </p>
+
+          <form class="service-card tracking-form" data-tracking-form>
+            <div class="form-grid">
+              <label class="full">
+                Código de orden
+                <input type="text" name="codigo" placeholder="Ej. NV-2026-0148" required />
+              </label>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Consultar orden</button>
+          </form>
+        </div>
+
+        <div class="device-card reveal" data-tracking-result>
+          <span class="device-label">Sin consulta</span>
+          <h2>El estado aparecerá aquí.</h2>
+          <p class="hero-description">
+            Usa el código demo o crea una solicitud nueva para probar el flujo completo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Garantía</p>
+          <h2>Información importante para el cliente.</h2>
+          <p>
+            La garantía demo cubre piezas instaladas y mano de obra sobre el mismo fallo,
+            durante 90 días desde la entrega registrada.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span>01</span>
+            <h3>Recepción</h3>
+            <p>El equipo se registra con datos del cliente y descripción del problema.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>02</span>
+            <h3>Diagnóstico</h3>
+            <p>Se revisa el origen de la falla y se prepara una cotización clara.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>03</span>
+            <h3>Aprobación</h3>
+            <p>El cliente acepta el presupuesto antes de iniciar la reparación.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>04</span>
+            <h3>Garantía</h3>
+            <p>La reparación queda respaldada con una garantía demo de 90 días.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 NovaVolt Service. Empresa ficticia.</p>
+      <div>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="garantia.html">Garantía</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/50760000000" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <img src="../assets/icons/whatsapp.svg" alt="" />
+  </a>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">
+    <img src="../assets/icons/arrow-up.svg" alt="" />
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/localStorageDB.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

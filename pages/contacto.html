@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contacto | NovaVolt Service</title>
+  <meta name="description" content="Contacto demo de NovaVolt Service con formulario local, WhatsApp, correo, ubicación y newsletter." />
+  <meta name="theme-color" content="#172531" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a class="brand" href="../index.html">
+        <img class="brand-logo" src="../assets/img/logo.svg" alt="" />
+        <span class="brand-text">NovaVolt <strong>Service</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="tienda.html" class="nav-link">Tienda</a>
+        <a href="solicitar-reparacion.html" class="nav-link">Reparación</a>
+        <a href="contacto.html" class="nav-link active">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="seguimiento-orden.html">Seguimiento</a>
+        <a class="btn btn-primary" href="solicitar-reparacion.html">Solicitar servicio</a>
+      </div>
+
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <img src="../assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="../index.html">Inicio</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="solicitar-reparacion.html">Solicitar reparación</a>
+      <a href="seguimiento-orden.html">Seguimiento de orden</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Contacto directo</p>
+          <h1>Hablemos de tu equipo y la mejor solución técnica.</h1>
+          <p class="hero-description">
+            Esta página simula un centro de contacto profesional. Los mensajes se guardan
+            localmente en el navegador con localStorage.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#formulario">Enviar mensaje</a>
+            <a class="btn btn-secondary" href="solicitar-reparacion.html">Solicitar reparación</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+              <p>Horario demo</p>
+              <strong>Lun - Sáb | 8:00 a.m. - 6:00 p.m.</strong>
+            </div>
+          </div>
+
+          <div class="device-card">
+            <span class="device-label">Canales disponibles</span>
+            <h2>WhatsApp, correo, teléfono y formulario local.</h2>
+
+            <ol class="timeline">
+              <li class="done">Mensaje recibido</li>
+              <li class="done">Revisión inicial</li>
+              <li class="current">Respuesta técnica</li>
+              <li>Solicitud</li>
+              <li>Seguimiento</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section services-preview" id="formulario">
+      <div class="container about-grid">
+        <div class="about-content reveal">
+          <p class="eyebrow">Información de contacto</p>
+          <h2>Atención técnica ficticia, presentada como empresa real.</h2>
+          <p>
+            Usa estos datos para la demostración. Puedes cambiarlos luego por los datos
+            reales de la empresa.
+          </p>
+
+          <div class="contact-list">
+            <a href="tel:+50760000000">
+              <img src="../assets/icons/phone.svg" alt="" />
+              <span>
+                <strong>Teléfono</strong>
+                +507 6000-0000
+              </span>
+            </a>
+
+            <a href="mailto:contacto@novavoltservice.demo">
+              <img src="../assets/icons/email.svg" alt="" />
+              <span>
+                <strong>Correo</strong>
+                contacto@novavoltservice.demo
+              </span>
+            </a>
+
+            <a href="https://wa.me/50760000000" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/whatsapp.svg" alt="" />
+              <span>
+                <strong>WhatsApp</strong>
+                Atención rápida demo
+              </span>
+            </a>
+
+            <a href="#ubicacion">
+              <img src="../assets/icons/location.svg" alt="" />
+              <span>
+                <strong>Ubicación</strong>
+                Ciudad de Panamá, Panamá
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <form class="service-card reveal" data-contact-form>
+          <h3>Enviar mensaje</h3>
+          <p>El mensaje quedará guardado localmente en el navegador.</p>
+
+          <div class="form-grid">
+            <label>
+              Nombre
+              <input type="text" name="nombre" placeholder="Ej. Carlos Rivera" required />
+            </label>
+
+            <label>
+              Correo electrónico
+              <input type="email" name="email" placeholder="correo@ejemplo.com" required />
+            </label>
+
+            <label class="full">
+              Teléfono
+              <input type="tel" name="telefono" placeholder="+507 6000-0000" />
+            </label>
+
+            <label class="full">
+              Mensaje
+              <textarea name="mensaje" rows="6" placeholder="Cuéntanos qué necesitas revisar o consultar." required></textarea>
+            </label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Guardar mensaje local</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="ubicacion">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Ubicación demo</p>
+          <h2>Centro técnico NovaVolt Service.</h2>
+          <p>
+            El mapa es una representación visual local, sin conexión a Google Maps.
+          </p>
+        </div>
+
+        <div class="map-card reveal">
+          <div class="map-pin">
+            <img src="../assets/icons/location.svg" alt="" />
+          </div>
+
+          <div>
+            <span class="device-label">Ciudad de Panamá</span>
+            <h3>Av. Técnica 120, Local 4B</h3>
+            <p>Zona ficticia para demostración empresarial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-preview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Newsletter</p>
+          <h2>Recibe consejos técnicos demo.</h2>
+          <p>
+            El correo se guardará localmente en la tabla newsletter del navegador.
+          </p>
+        </div>
+
+        <form class="service-card newsletter-form reveal" data-newsletter-form>
+          <div class="form-grid">
+            <label class="full">
+              Correo electrónico
+              <input type="email" placeholder="tu-correo@ejemplo.com" required />
+            </label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Suscribirme localmente</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section cta-section section-dark">
+      <div class="container cta-box reveal">
+        <p class="eyebrow">Respuesta técnica clara</p>
+        <h2>También puedes crear una solicitud de reparación.</h2>
+        <p>
+          Si ya conoces el problema del equipo, genera una orden local con código automático.
+        </p>
+
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="solicitar-reparacion.html">Crear solicitud</a>
+          <a class="btn btn-secondary" href="seguimiento-orden.html">Consultar orden</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 NovaVolt Service. Empresa ficticia.</p>
+      <div>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="garantia.html">Garantía</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/50760000000" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <img src="../assets/icons/whatsapp.svg" alt="" />
+  </a>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">
+    <img src="../assets/icons/arrow-up.svg" alt="" />
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/localStorageDB.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

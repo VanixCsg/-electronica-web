@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Panel de Cliente | NovaVolt Service</title>
+  <meta name="description" content="Panel demo de cliente NovaVolt Service con sesión, solicitudes, carrito y datos locales." />
+  <meta name="theme-color" content="#172531" />
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a class="brand" href="../index.html">
+        <img class="brand-logo" src="../assets/img/logo.svg" alt="" />
+        <span class="brand-text">NovaVolt <strong>Service</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="tienda.html" class="nav-link">Tienda</a>
+        <a href="solicitar-reparacion.html" class="nav-link">Reparación</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="seguimiento-orden.html">Seguimiento</a>
+        <button class="btn btn-primary" type="button" data-logout>Cerrar sesión</button>
+      </div>
+
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <img src="../assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="../index.html">Inicio</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="solicitar-reparacion.html">Solicitar reparación</a>
+      <a href="seguimiento-orden.html">Seguimiento de orden</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark dashboard-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Panel del cliente</p>
+          <h1>Resumen local de tu cuenta NovaVolt.</h1>
+          <p class="hero-description" data-dashboard-welcome>
+            Cargando sesión local...
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="solicitar-reparacion.html">Nueva reparación</a>
+            <a class="btn btn-secondary" href="seguimiento-orden.html">Consultar orden</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+              <p>Sesión demo</p>
+              <strong data-session-status>Verificando...</strong>
+            </div>
+          </div>
+
+          <div class="device-card">
+            <span class="device-label">Datos locales</span>
+            <h2>Solicitudes, carrito, mensajes y sesión guardados en el navegador.</h2>
+
+            <ol class="timeline">
+              <li class="done">Usuario</li>
+              <li class="done">Solicitudes</li>
+              <li class="current">Carrito</li>
+              <li>Mensajes</li>
+              <li>Historial</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section services-preview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Resumen</p>
+          <h2>Actividad de la demo.</h2>
+          <p>
+            Esta información se genera con los datos almacenados en localStorage.
+          </p>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="dashboard-card reveal">
+            <span>Solicitudes</span>
+            <strong data-count-orders>0</strong>
+            <p>Órdenes de reparación guardadas.</p>
+          </article>
+
+          <article class="dashboard-card reveal">
+            <span>Carrito</span>
+            <strong data-count-cart>0</strong>
+            <p>Productos agregados en la tienda demo.</p>
+          </article>
+
+          <article class="dashboard-card reveal">
+            <span>Mensajes</span>
+            <strong data-count-messages>0</strong>
+            <p>Mensajes enviados desde contacto.</p>
+          </article>
+
+          <article class="dashboard-card reveal">
+            <span>Newsletter</span>
+            <strong data-count-newsletter>0</strong>
+            <p>Correos guardados localmente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Mis órdenes</p>
+          <h2>Solicitudes registradas.</h2>
+        </div>
+
+        <div class="dashboard-list reveal" data-dashboard-orders>
+          <p>Cargando órdenes...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-preview">
+      <div class="container about-grid">
+        <div class="about-content reveal">
+          <p class="eyebrow">Acciones rápidas</p>
+          <h2>Continúa el flujo de atención.</h2>
+          <p>
+            Desde aquí puedes crear una nueva solicitud, consultar una orden existente
+            o volver a la tienda demo.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="solicitar-reparacion.html">Nueva solicitud</a>
+            <a class="btn btn-outline" href="tienda.html">Ir a tienda</a>
+          </div>
+        </div>
+
+        <div class="device-card reveal">
+          <span class="device-label">Cuenta demo</span>
+          <h2 data-dashboard-user>Usuario local</h2>
+          <p class="hero-description">
+            Esta sección no usa servidor. Al limpiar los datos del navegador se borra la sesión.
+          </p>
+
+          <button class="btn btn-primary" type="button" data-logout>Cerrar sesión</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© 2026 NovaVolt Service. Empresa ficticia.</p>
+      <div>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="garantia.html">Garantía</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/50760000000" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <img src="../assets/icons/whatsapp.svg" alt="" />
+  </a>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">
+    <img src="../assets/icons/arrow-up.svg" alt="" />
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../js/localStorageDB.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/main.js"></script>
+
+  <script>
+    const session = window.NovaVoltDB.auth.getSession();
+
+    if (!session) {
+      window.location.href = "login.html";
+    }
+
+    const db = window.NovaVoltDB.get();
+
+    const welcome = document.querySelector("[data-dashboard-welcome]");
+    const sessionStatus = document.querySelector("[data-session-status]");
+    const userTitle = document.querySelector("[data-dashboard-user]");
+
+    const countOrders = document.querySelector("[data-count-orders]");
+    const countCart = document.querySelector("[data-count-cart]");
+    const countMessages = document.querySelector("[data-count-messages]");
+    const countNewsletter = document.querySelector("[data-count-newsletter]");
+    const ordersContainer = document.querySelector("[data-dashboard-orders]");
+
+    if (session) {
+      welcome.textContent = `Bienvenido, ${session.nombre}. Este panel muestra tu información guardada localmente.`;
+      sessionStatus.textContent = session.rol;
+      userTitle.textContent = session.nombre;
+    }
+
+    countOrders.textContent = db.solicitudes.length;
+    countCart.textContent = window.NovaVoltDB.cart.count();
+    countMessages.textContent = db.mensajesContacto.length;
+    countNewsletter.textContent = db.newsletter.length;
+
+    if (db.solicitudes.length === 0) {
+      ordersContainer.innerHTML = `
+        <div class="device-card">
+          <span class="device-label">Sin órdenes</span>
+          <h2>No hay solicitudes registradas.</h2>
+          <p class="hero-description">Crea una nueva solicitud para verla en este panel.</p>
+        </div>
+      `;
+    } else {
+      ordersContainer.innerHTML = db.solicitudes.map((order) => `
+        <article class="order-row">
+          <div>
+            <span class="device-label">${order.estado}</span>
+            <h3>${order.codigo}</h3>
+            <p>${order.equipo} | ${order.marca} ${order.modelo}</p>
+          </div>
+
+          <div>
+            <strong>${order.fechaSolicitud}</strong>
+            <a class="btn btn-outline" href="seguimiento-orden.html">Consultar</a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    document.querySelectorAll("[data-logout]").forEach((button) => {
+      button.addEventListener("click", () => {
+        window.NovaVoltDB.auth.logout();
+        window.location.href = "login.html";
+      });
+    });
+  </script>
+</body>
+</html>
