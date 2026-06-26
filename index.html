@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NovaVolt Service | Servicio Técnico Electrónico Profesional</title>
+  <meta
+    name="description"
+    content="NovaVolt Service es una empresa ficticia de demostración para reparación electrónica, soporte técnico, venta de repuestos y seguimiento local con localStorage."
+  />
+  <meta name="theme-color" content="#172531" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <a class="brand" href="index.html" aria-label="NovaVolt Service inicio">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="" />
+        <span class="brand-text">
+          NovaVolt
+          <strong>Service</strong>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="pages/sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+        <a href="pages/servicios.html" class="nav-link">Servicios</a>
+        <a href="pages/tienda.html" class="nav-link">Tienda</a>
+        <a href="pages/solicitar-reparacion.html" class="nav-link">Reparación</a>
+        <a href="pages/contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="pages/seguimiento-orden.html">Seguimiento</a>
+        <a class="btn btn-primary" href="pages/solicitar-reparacion.html">Solicitar servicio</a>
+      </div>
+
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <img src="assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="index.html">Inicio</a>
+      <a href="pages/sobre-nosotros.html">Sobre nosotros</a>
+      <a href="pages/servicios.html">Servicios</a>
+      <a href="pages/tienda.html">Tienda</a>
+      <a href="pages/solicitar-reparacion.html">Solicitar reparación</a>
+      <a href="pages/seguimiento-orden.html">Seguimiento de orden</a>
+      <a href="pages/contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Servicio técnico premium local</p>
+
+          <h1>
+            Reparación electrónica profesional con seguimiento claro y garantía realista.
+          </h1>
+
+          <p class="hero-description">
+            NovaVolt Service es una demostración empresarial completa hecha solo con HTML,
+            CSS y JavaScript. Las solicitudes, órdenes y datos se guardarán localmente en
+            el navegador mediante localStorage.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="pages/solicitar-reparacion.html">
+              Solicitar diagnóstico
+            </a>
+            <a class="btn btn-secondary" href="pages/servicios.html">
+              Ver servicios
+            </a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Indicadores de servicio">
+            <article>
+              <strong data-counter="14">0</strong>
+              <span>Años de experiencia</span>
+            </article>
+
+            <article>
+              <strong data-counter="4280">0</strong>
+              <span>Equipos atendidos</span>
+            </article>
+
+            <article>
+              <strong data-counter="90">0</strong>
+              <span>Días de garantía</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Resumen de servicio técnico">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+              <p>Orden demo activa</p>
+              <strong>NV-2026-0148</strong>
+            </div>
+          </div>
+
+          <div class="device-card">
+            <span class="device-label">Smart TV 55 pulgadas</span>
+            <h2>Diagnóstico de fuente y tarjeta principal</h2>
+
+            <ol class="timeline">
+              <li class="done">Solicitud recibida</li>
+              <li class="done">Diagnóstico técnico</li>
+              <li class="current">Cotización enviada</li>
+              <li>Reparación</li>
+              <li>Entrega</li>
+            </ol>
+          </div>
+
+          <div class="guarantee-card">
+            <img src="assets/icons/check.svg" alt="" />
+            <div>
+              <strong>Garantía de 90 días</strong>
+              <span>En piezas instaladas y mano de obra.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="brands-section" aria-label="Marcas compatibles ficticias">
+      <div class="container">
+        <p class="section-kicker">Trabajamos con equipos tipo</p>
+
+        <div class="brand-strip">
+          <span>Samtek</span>
+          <span>Luxen</span>
+          <span>Sonatek</span>
+          <span>Panavox</span>
+          <span>Philiax</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-preview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Servicios principales</p>
+          <h2>Soluciones técnicas para hogares, comercios y oficinas.</h2>
+          <p>
+            Esta primera fase muestra el inicio completo. Luego iremos creando cada página
+            individual con su propio archivo HTML.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card reveal">
+            <img src="assets/icons/tools.svg" alt="" />
+            <h3>Reparación de televisores</h3>
+            <p>
+              Diagnóstico de pantallas LED, OLED, QLED, fuentes de poder,
+              backlight, main board y problemas de imagen o audio.
+            </p>
+            <a href="pages/servicios.html">Ver detalles</a>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="assets/icons/lightning.svg" alt="" />
+            <h3>Electrónica general</h3>
+            <p>
+              Atención para consolas, monitores, sistemas de audio,
+              equipos inteligentes y componentes electrónicos.
+            </p>
+            <a href="pages/servicios.html">Explorar servicio</a>
+          </article>
+
+          <article class="service-card reveal">
+            <img src="assets/icons/location.svg" alt="" />
+            <h3>Servicio a domicilio</h3>
+            <p>
+              Agenda visitas técnicas, revisiones iniciales y entrega de equipos
+              con un flujo local preparado para demostración.
+            </p>
+            <a href="pages/solicitar-reparacion.html">Agendar visita</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-preview section-muted">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="assets/img/about/workshop.jpg" alt="Taller técnico profesional de NovaVolt Service" />
+        </div>
+
+        <div class="about-content reveal">
+          <p class="eyebrow">Sobre NovaVolt</p>
+          <h2>Una empresa ficticia con presentación realista y estructura profesional.</h2>
+          <p>
+            NovaVolt Service combina atención técnica, procesos claros y una imagen visual
+            sobria basada en la paleta azul petróleo, negro profundo y dorado cálido.
+          </p>
+
+          <div class="feature-list">
+            <div>
+              <img src="assets/icons/check.svg" alt="" />
+              <span>Diagnóstico transparente</span>
+            </div>
+            <div>
+              <img src="assets/icons/check.svg" alt="" />
+              <span>Cotizaciones simuladas con datos locales</span>
+            </div>
+            <div>
+              <img src="assets/icons/check.svg" alt="" />
+              <span>Seguimiento de órdenes sin base de datos externa</span>
+            </div>
+          </div>
+
+          <a class="btn btn-dark" href="pages/sobre-nosotros.html">Conocer la empresa</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Proceso de trabajo</p>
+          <h2>De la solicitud a la entrega, todo queda organizado.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span>01</span>
+            <h3>Solicitud</h3>
+            <p>El cliente registra su equipo, datos de contacto y descripción del problema.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>02</span>
+            <h3>Diagnóstico</h3>
+            <p>Se genera una revisión técnica con estado, prioridad y observaciones.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>03</span>
+            <h3>Cotización</h3>
+            <p>El sistema local prepara una cotización estimada para la demo.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span>04</span>
+            <h3>Seguimiento</h3>
+            <p>La orden puede consultarse con un código guardado en el navegador.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section section-dark">
+      <div class="container cta-box reveal">
+        <p class="eyebrow">Demo local sin backend</p>
+        <h2>Lista para crecer página por página.</h2>
+        <p>
+          En los siguientes pasos conectaremos estilos, animaciones y localStorage para
+          que la experiencia se sienta como una aplicación real.
+        </p>
+
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="pages/solicitar-reparacion.html">Crear solicitud</a>
+          <a class="btn btn-secondary" href="pages/tienda.html">Ver tienda demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img class="brand-logo" src="assets/img/logo.svg" alt="" />
+          <span class="brand-text">
+            NovaVolt
+            <strong>Service</strong>
+          </span>
+        </a>
+
+        <p>
+          Servicio técnico electrónico ficticio para demostración profesional local.
+          Construido con HTML, CSS, JavaScript y almacenamiento del navegador.
+        </p>
+      </div>
+
+      <div>
+        <h3>Empresa</h3>
+        <a href="pages/sobre-nosotros.html">Sobre nosotros</a>
+        <a href="pages/testimonios.html">Testimonios</a>
+        <a href="pages/galeria.html">Galería</a>
+        <a href="pages/blog.html">Blog</a>
+      </div>
+
+      <div>
+        <h3>Servicios</h3>
+        <a href="pages/servicios.html">Reparaciones</a>
+        <a href="pages/tienda.html">Tienda</a>
+        <a href="pages/solicitar-reparacion.html">Solicitar reparación</a>
+        <a href="pages/seguimiento-orden.html">Seguimiento</a>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <a href="tel:+50760000000">
+          <img src="assets/icons/phone.svg" alt="" />
+          +507 6000-0000
+        </a>
+        <a href="mailto:contacto@novavoltservice.demo">
+          <img src="assets/icons/email.svg" alt="" />
+          contacto@novavoltservice.demo
+        </a>
+        <a href="pages/contacto.html">
+          <img src="assets/icons/location.svg" alt="" />
+          Ciudad de Panamá, Panamá
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 NovaVolt Service. Empresa ficticia para demostración local.</p>
+
+      <div>
+        <a href="pages/privacidad.html">Privacidad</a>
+        <a href="pages/terminos.html">Términos</a>
+        <a href="pages/garantia.html">Garantía</a>
+        <a href="pages/cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/50760000000"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <img src="assets/icons/whatsapp.svg" alt="" />
+  </a>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">
+    <img src="assets/icons/arrow-up.svg" alt="" />
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/localStorageDB.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
